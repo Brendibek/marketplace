@@ -1,0 +1,81 @@
+body{
+  height: 100%;
+}
+
+.content{
+	min-height:100%;
+}
+
+.footer{
+
+	min-height:100px;
+	max-height:400px;
+	position:relative;
+}
+
+.textSize{
+	font-size: 18px;
+}
+
+/*кнопке в менюЅар*/
+.buttonMenu{
+	background:#ff003c;
+	-webkit-box-shadow:  -5px 0px 15px 0px rgba(0, 0, 0, .50);
+	transition: 0.3s background;
+}
+.buttonMenu:hover{
+	background: #ff8b05;
+	transition: 0.3s background;
+}
+/*кнопке в менюЅар*/
+
+.formUpIn{
+	position: absolute;
+	top:75px;
+	right:0px;
+}
+
+.borderNull{
+	border: 0px;
+}
+
+::selection {
+	background: #999999;
+}
+
+a{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+li{
+	display:inline;
+}
+.menuCat
+{
+	width:1000px;
+	position: absolute;
+	background: #333333;
+	display:none;
+	left:0;
+	z-index: 3;
+}
+.menuSubcat
+{
+	position: absolute;
+	display:none;
+	left:100%;
+}
+.menuList{
+	position: relative;
+}
+
+.categories:hover  .menuCat{
+	display: block;
+}
+.menuList:hover  > .menuSubcat{
+	display: block;
+}

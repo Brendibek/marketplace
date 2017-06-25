@@ -1,0 +1,57 @@
+/*класс слайдера*/
+.slider-content{
+	position:relative;
+	margin:auto;
+}
+
+/*точки*/
+.slider-dot-panel{
+	width: 100%;
+	position:absolute;
+	padding: 10px;
+	text-align:center;
+	color:#ffffff;
+	bottom:0;
+}
+
+.slider-dot{
+	border:1px solid #cccccc;
+	height:12px;
+	width:12px;
+	display:inline-block;
+	border-radius:50%;
+	cursor:pointer;
+}
+
+.slider-dot-white,.slider-dot:hover{
+	background-color:#ffffff;
+}
+
+/*стрелки*/
+.slider-arrow-panel{
+	width: 100%;
+	top: 50%;
+	position:absolute;
+	padding-left: 15px;
+	padding-right: 15px;
+	color:#ffffff;
+	bottom:0;
+}
+
+.slider-arrow-left{
+	float:left;
+	cursor:pointer;
+	text-shadow: red 0 0 50px;
+}
+
+.slider-arrow-right{
+	float:right;
+	cursor:pointer;
+}
+
+.slider-arrow-left:hover,.slider-arrow-right:hover{
+	color:#cccccc;
+}
+.slider-arrow-left:active,.slider-arrow-right:active{
+	color:#999999;
+}

@@ -1,0 +1,140 @@
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<title>Торговая площадка "Мрр..."</title>
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+	<link href="formStyle.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="sliderStyle.css" rel="stylesheet">
+	<link href="palette.css" rel="stylesheet">
+	<script src="js/validation.js"></script>
+	<script src="js/form.js"></script>
+	<script src="js/menuCat.js"></script>
+  </head>
+  <body onresize="blockSize(); test();">
+    <div class="content firstColor" id="content">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid secondColor" id="menuBar">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand"><p style="margin-top: -16px; align:middle;" class="textColor"><img src="logo.png" style="height: 60px; padding-right:7px;">Мрр...</p></a>
+				</div>  
+
+				<ul class="nav navbar-nav navbar-left">
+					<li class="buttonMenu" style="background: #ff8b05;"><a href="#"><p class="textSize textColor">Main page</p></a></li>
+					<!-- Categories -->
+					<li class="buttonMenu categories"><a><p class="textSize textColor">Categories</p></a>
+						<ul class="menuCat" id="menuCat">
+							<li class="menuList"><a href ="#">Категории меню1</a>
+								<ul class="menuSubcat">
+									<li><a href ="#">Подпункты1</a></li>
+								</ul>
+							</li>
+							<li class="menuList"><a href ="#">Категории меню2</a>
+								<ul class="menuSubcat">
+									<li><a href ="#">Подпункты2</a></li>
+								</ul>
+							</li>
+							<li class="menuList"><a href ="#">Категории меню3</a>
+								<ul class="menuSubcat">
+									<li><a href ="#">Подпункты3</a></li>
+								</ul>
+							</li>
+							<li class="menuList"><a href ="#">Категории меню4</a>
+								<ul class="menuSubcat">
+									<li><a href ="#">Подпункты4</a></li>
+								</ul>
+							</li>
+							<li class="menuList"><a href ="#">Категории меню5</a>
+								<ul class="menuSubcat">
+									<li><a href ="#">Подпункты5</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<!-- About us -->
+					<li class="buttonMenu"><a href="about.html"><p class="textSize textColor">About</p></a></li>
+					<!-- Contacts -->
+					<!--<li><a href="#">Contacts</a></li>-->
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li class="buttonMenu" style="z-index: 1;"><a href="#" onClick="display('signUp')"><p class="textSize textColor">Регистрация</p></a></li>
+					<!-- Sign in -->
+					<li class="buttonMenu" style="z-index: 1;"><a href="#" onClick="display('signIn')"><p class="textSize textColor">Вход</p></a></li>
+				</ul>
+
+				<form class="navbar-form navbar-right borderNull">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-success">Search</button>
+				</form>
+			</div>
+		</nav>
+
+		<div class="container-fluid">
+		<!-- Slider -->
+
+		<div class="slider-content" style="max-width:800px; align=centre">
+			<img class="slide" src="https://www.w3schools.com/w3css/img_lights.jpg" style="width:100%">
+			<img class="slide" src="https://www.w3schools.com/w3css/img_mountains.jpg" style="width:100%">
+			<img class="slide" src="https://www.w3schools.com/w3css/img_forest.jpg" style="width:100%">
+			<img class="slide" src="https://www.w3schools.com/w3css/img_mountains.jpg" style="width:100%">
+			<div class="slider-arrow-panel">
+				<div class="slider-arrow-left" onclick="next_prev(-1)" onselectstart="return false">&#10094;</div>
+				<div class="slider-arrow-right" onclick="next_prev(1)" onselectstart="return false">&#10095;</div>
+			</div>
+			<div class="slider-dot-panel" style="width:100%">
+				<span class="slider-dot" onclick="currentDiv(1)"></span>
+				<span class="slider-dot" onclick="currentDiv(2)"></span>
+				<span class="slider-dot" onclick="currentDiv(3)"></span>
+				<span class="slider-dot" onclick="currentDiv(4)"></span>
+			</div>
+		</div>
+		<script src="js/slider.js"></script>
+
+		<!-- Products -->
+			<div class="row">
+				<h1 align="center">Best products</h1>
+
+				<script>
+					for(var i = 0; i < 5; i++){
+					document.write('\
+						<div class="col-xs-12 col-sm-6 col-md-3 col-lg-2">\
+							<div class="thumbnail">\
+								<img src="noImg.png">\
+								<div class="caption">\
+									<h3>Name</h3>\
+										<a><p>Description</p></a>\
+									<p><button href="#" class="btn btn-defaurt">Купить</button></p>\
+								</div>\
+							</div>\
+						</div>');
+					}
+				</script>
+			</div>
+		</div>
+    </div>
+	
+	<footer class="footer secondColor" id="footer">
+		<div class="container-fluid">
+			<form class="navbar-form navbar-left">
+				<!-- Callback form -->
+				<p>Input your email</p>
+				<input type="text" class="form-control" id="email" placeholder="Email">
+				<button type="submit" class="btn btn-success">Submit</button>
+			</form>
+		</div>
+		<div class="container-fluid">
+		  <p class="text-center" style="vertical-align:bottom;">Copyright (c) 2017 Copyright Holder All Rights Reserved.</p>
+		</div>
+	</footer>
+	<div id="blockWindow" onClick="remove()"  style="z-index: 2;"></div>
+	<div id="signUpIn" class="formUpIn"></div>
+	<!--<img src="noImg.png"style="width:1280px; height:720px">-->
+  </body>
+</html>
