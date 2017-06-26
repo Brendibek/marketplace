@@ -1,5 +1,5 @@
 var on = false;
-var last
+var last;
 var timeOpen;
 var timeClose;
 var deltaTime;

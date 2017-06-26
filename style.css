@@ -51,31 +51,41 @@ ul{
 	padding: 0;
 	list-style: none;
 }
-li{
-	display:inline;
-}
 .menuCat
 {
-	width:1000px;
+	width: 100%;
+	top:65px;
 	position: absolute;
-	background: #333333;
-	display:none;
+	text-align:center;
 	left:0;
+	display: none;
 	z-index: 3;
 }
 .menuSubcat
 {
+	height:200px;
+	top:17px;
+	width:100%;
 	position: absolute;
-	display:none;
-	left:100%;
+	text-align:center;
+	display: none;
+	z-index: 3;
+	column-count: 3;
 }
 .menuList{
-	position: relative;
+	display: inline;
 }
 
-.categories:hover  .menuCat{
+.categories:hover  + .menuCat{
 	display: block;
 }
-.menuList:hover  > .menuSubcat{
+.menuCat:hover {
+	display: block;
+}
+
+.menuList:hover   .menuSubcat{
+	display: block;
+}
+.menuSubcat:hover{
 	display: block;
 }
