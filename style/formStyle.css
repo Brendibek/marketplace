@@ -39,7 +39,7 @@
 	margin-bottom:-35px;
 	width:150px;
 	height:40px;
-	background: #e0e0a9;
+	background:#ff003c;
 	color: #383247;
 	font-family: sans-serif;  
 	font-size: 16pt;
@@ -50,9 +50,11 @@
 	border-radius:2px;
 	border: 1px solid #383247;
 	transition: 0.5s background;
+	-webkit-box-shadow:  -5px 0px 15px 0px rgba(0, 0, 0, .50);
+	transition: 0.3s background;
 }
 
 .button:hover{
-	background: #a5baa0;
+	background: #ff8b05;
 	transition: 0.5s background;
 }
