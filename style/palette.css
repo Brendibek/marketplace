@@ -10,3 +10,12 @@
 .textColor{
 	color: #333333;
 }
+.linkColor{
+	color: #444444;
+}
+.linkColor:visited {
+	color: #444444;
+}
+.linkColor:hover {
+	color: #444444;
+}
